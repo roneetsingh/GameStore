@@ -54,15 +54,16 @@ The application displays a virtual Game store that contains virtual products and
 
 Users can do the following:
 
-- Create an account, login or logout
+- Create an account, login or logout.
 - Browse available products added by the admin or members having staff status.
-- Add products to the shopping cart
-- Delete products from the shopping cart
-- Display the shopping cart
-- To checkout, a user must be logged in
-- The profile contains all the informations about delivery address and user can add new address too
-- User can see their past orders and its status
-- Search bar allows user to search for games and related results will be displayed
+- Add products to the shopping cart.
+- Delete products from the shopping cart.
+- View the shopping cart.
+- To checkout, a user must be logged in.
+- The profile contains all the informations about delivery address and user can add new address too.
+- User can see their past orders and its status.
+- Search bar allows user to search for games and related results will be displayed.
+- Add reviews for a product.
 
 Admins can do the following:
 
@@ -83,23 +84,21 @@ Admins can do the following:
 ### Product Schema:
 
 - ProductId(Number)
-- title (String)
-- imagePath (String)
+- name (String)
+- image (String)
 - description (String)
 - price (Number)
-- category (ObjectId - a reference to the category schema)
+- genre (ObjectId - a reference to the category schema)
 
 ### Cart Schema:
 
 - items: an array of objects, each object contains: <br>
   ~ productId (ObjectId - a reference to the product schema) <br>
-  ~ qty (Number) <br>
+  ~ quantity (Number) <br>
   ~ price (Number) <br>
-  ~ title (String) <br>
-- totalQty (Number)
+  ~ name (String) <br>
 - totalCost (Number)
 - user (ObjectId - a reference to the user schema)
-- createdAt
 
 ### Order Schema:
 
