@@ -111,7 +111,7 @@ Admins can do the following:
 ## Run
 
 To run this application
-- you need to install [Technology](#technology) items
+- you need to install [Technology](#technology) items using pip install -r requirements.txt
 - Set your SECRET_KEY
 - Set your Database
 - type <b>python manage.py runserver</b>
